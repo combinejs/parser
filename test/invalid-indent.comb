@@ -1,0 +1,3 @@
+ TableBeauty
+  html.tag    = 'table'
+   css.display = 'table'
