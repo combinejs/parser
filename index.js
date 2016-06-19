@@ -1,6 +1,6 @@
 'use strict';
 
-var nodeParse = require('./lib/node-parse');
+const nodeParse = require('./lib/node-parse');
 
 /**
  *
@@ -10,7 +10,7 @@ var nodeParse = require('./lib/node-parse');
  */
 module.exports = function(string) {
     if (typeof string !== 'string') {
-        throw 'parse need string';
+        throw Error('parse need string');
     }
 
     let state = new ParseState(string),
@@ -27,8 +27,7 @@ module.exports = function(string) {
             stack[state.indent] = node;
         } while (! state.isEOF);
     } catch (e) {
-        console.error(state, e);
-        throw 'parse error';
+        throw Error('parse error');
     }
 
     return stack[0];
