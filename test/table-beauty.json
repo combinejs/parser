@@ -1,0 +1,128 @@
+{
+    "name": "TableBeauty",
+    "blockName": "TableBeauty",
+    "elementName": "",
+    "isBlock": true,
+    "isElement": false,
+    "_props": {
+        "html": {
+            "tag": "table"
+        },
+        "css": {
+            "display": "table"
+        }
+    },
+    "_content": [
+        {
+            "name": "row",
+            "blockName": "TableBeauty",
+            "elementName": "row",
+            "isBlock": false,
+            "isElement": true,
+            "_props": {
+                "html": {
+                    "tag": "tr"
+                },
+                "css": {
+                    "display": "table-row"
+                }
+            },
+            "_content": [
+                {
+                    "name": "cell",
+                    "blockName": "TableBeauty",
+                    "elementName": "cell",
+                    "isBlock": false,
+                    "isElement": true,
+                    "_props": {
+                        "html": {
+                            "tag": "td"
+                        },
+                        "css": {
+                            "display": "table-cell"
+                        }
+                    },
+                    "_content": [],
+                    "_mixins": [],
+                    "_directives": {
+                        "match": {
+                            "selector": {
+                                "_params": {
+                                    "a": null,
+                                    "b": null
+                                },
+                                "_priority": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "_mixins": [],
+            "_directives": {
+                "match": {
+                    "selector": {
+                        "_params": {
+                            "a": null,
+                            "b": null
+                        },
+                        "_priority": 0
+                    }
+                }
+            }
+        },
+        {
+            "name": "head",
+            "blockName": "TableBeauty",
+            "elementName": "head",
+            "isBlock": false,
+            "isElement": true,
+            "_props": {
+                "css": {
+                    "background": "#eee",
+                    "fontWeight": "900"
+                }
+            },
+            "_content": [
+                {
+                    "name": "headCell",
+                    "blockName": "TableBeauty",
+                    "elementName": "headCell",
+                    "isBlock": false,
+                    "isElement": true,
+                    "_props": {
+                        "html": {
+                            "tag": "th"
+                        }
+                    },
+                    "_content": [],
+                    "_mixins": [],
+                    "_directives": {
+                        "match": {
+                            "selector": {
+                                "_params": {
+                                    "a": null,
+                                    "b": null
+                                },
+                                "_priority": 0
+                            }
+                        }
+                    }
+                }
+            ],
+            "_mixins": [],
+            "_directives": {
+                "match": {
+                    "selector": {
+                        "_params": {
+                            "a": 1,
+                            "b": null
+                        },
+                        "_priority": 3
+                    }
+                }
+            }
+        }
+    ],
+    "_mixins": [],
+    "_directives": {}
+}
