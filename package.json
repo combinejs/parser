@@ -4,7 +4,8 @@
   "description": "default combinejs parser",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "coverage": "istanbul cover _mocha -- -R spec"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,21 @@
   },
   "homepage": "https://github.com/combinejs/parser#readme",
   "dependencies": {
+    "@combinejs/directives-provider": "^0.9.0",
     "@combinejs/match-directive": "^0.1.0",
     "@combinejs/node": "^0.1.1"
-  }
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "coveralls": "^2.11.9",
+    "istanbul": "^0.4.3",
+    "mocha": "^2.5.3"
+  },
+  "files": [
+    "LICENSE",
+    "History.md",
+    "Readme.md",
+    "index.js",
+    "lib/"
+  ]
 }
